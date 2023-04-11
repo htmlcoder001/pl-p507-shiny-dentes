@@ -102,7 +102,7 @@ $(".close-popup, .pop-up-button").click(function (e) {
     $("body,html").animate({ scrollTop: o }, 800);
 });
 var intr,
-    time = 3600;
+    time = 1800;
 function start_timer() {
     intr = setInterval(tick, 1e3);
 }
