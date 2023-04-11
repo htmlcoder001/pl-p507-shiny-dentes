@@ -71,6 +71,7 @@ a:visited,
                 -webkit-box-shadow: 0px -2px 20px 0px rgba(214,214,214,1);
                 -moz-box-shadow: 0px -2px 20px 0px rgba(214,214,214,1);
                 box-shadow: 0px -2px 20px 0px rgba(214,214,214,1);
+                margin-bottom: 60px;
             }
             .webt-header__wrapper {
                 display: flex;
@@ -160,7 +161,7 @@ a:visited,
                 text-decoration: none;
                 color: #353535;
             }
-            .webt-nav__link:hover:After {
+            .webt-nav__link:hover:after {
                 width: 100%;
             }
             .webt-wrapper__socials {
@@ -173,7 +174,83 @@ a:visited,
                 background-position: center;
                 background-repeat: no-repeat;
             }
+            
+            .webt-article-img {
+                max-width: 600px;
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .blur1 {
+                margin: 20px auto;
+                font-size: 0;
+                line-height: 0;
+                overflow: hidden;
+                cursor: pointer;
+                position: relative;
+            }
+            .blur1::before {
+                content: "18+";
+                color: #fff;
+                font-weight: bold;
+                font-size: 100px;
+                position: absolute;
+                top: 45%;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 1;
+                text-shadow: 0 0 10px #000;
+                font-family: sans-serif!important;
+            }
+            .blur {
+                filter: blur(.7);
+                -webkit-filter: blur(10px);
+            }
+            
+            @media (max-width: 1660px) {
+                .webt-wrapper__nav {
+                    gap: 24px;
+                }
+            }
+            @media (max-width: 1440px) {
+                .webt-wrapper__socials {
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                    background-image: url(images/socials.png);
+                    -webkit-background-size: contain;
+                    background-size: cover;
+                    background-position: left;
+                    background-repeat: no-repeat;
+                }
+                .webt-header__wrapper {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+            }
+            @media (max-width: 1240px) {
+                .webt-wrapper__nav {
+                    display: none;
+                }
+                .webt-header {
+                    height: 60px;
+                }
+                .webt-header__wrapper {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                }
+            }
+            @media (max-width: 575px) {
+                .webt-header {
+                    height: 45px;
+                }
+            }
         </style>
+        
         <header class="webt-header">
             <div class="webt-header__wrapper">
                 <div class="webt-wrapper__left">
@@ -205,21 +282,38 @@ a:visited,
                         <article id="post-58" class="article-post post-58 post type-post status-publish format-standard has-post-thumbnail category-zarabotki category-rejtingi">
                             <div class="entry-content" itemprop="articleBody">
                                 <h2 class="entry-title" itemprop="headline">Ruchome licówki. Historia uratowanego ślubu.</h2>
-                                <br/>
+                                <img src="images/pics/Pic1.jpeg" alt="" class="webt-article-img">
+                                <br>
                                 <p>Małgorzata i Czesław tak bardzo marzyli o idealnym ślubie, że chcieli, aby wszystko było bez zarzutu, w tym wygląd, a zwłaszcza ich uśmiechy na zdjęciach.</p>
                                 <p>Zauważyli, że ich zęby nie wyglądają tak, jakby chcieli i postanowili udać się do dentysty. Niestety dentysta poinformował ich, że ich zęby wymagają długiego leczenia, które nie tylko zajmie dużo czasu, ale także znacznie nadszarpnie budżet, jeszcze nieoficjalnej, rodziny.</p>
                                 <p><b>Małgorzata i Czesław byli rozczarowani, bo czasu przed ślubem było niewiele, a wszystkie wydatki były już zaplanowane.</b></p>
                                 <p>Zaczęli szukać alternatywnych metod, podczas których rozważali wiele różnych opcji. Po długim i bolesnym poszukiwaniu wyjścia, natknęli się na ruchome licówki, które były rozwiązaniem szybszym, tańszym i bezbolesnym niż podobne opcje. Po konsultacji ze swoim dentystą postanowili spróbować tej metody.</p>
                                 <p><b>Po przejściu przez kilka prostych kroków nasi bohaterowie przymierzyli swoje pierwsze ruchome licówki i byli dosłownie zdumieni rezultatem.</b></p>
+                                <img src="images/pics/Pic2.jpeg" alt="" class="webt-article-img">
+                                <br/>
                                 <p>Ich uśmiechy wyglądały pięknie, jakby właśnie przeszli skomplikowany zabieg u dentysty. Nasza para była bardzo zadowolona, że wybrała tę metodę, ponieważ była ona szybka, tania i bezbolesna. Wraz z nowym uśmiechem zaczęli czuć się bardziej pewni siebie i zrelaksowani.</p>
+                                <img src="images/pics/Pic3.jpeg" alt="" class="webt-article-img">
+                                <br/>
                                 <p>Wszyscy na weselu byli zachwyceni ich uśmiechami, a oni sami otrzymali wiele komplementów za swoje piękne uśmiechy. Małgorzata i Czesław byli bardzo wdzięczni za najszybsze, najtańsze i najbardziej bezbolesne rozwiązanie, które pomogło im osiągnąć idealny uśmiech. Czuli się bardziej pewni siebie podczas ślubu i na sesji zdjęciowej.</p>
+                                <img src="images/pics/Pic4.jpeg" alt="" class="webt-article-img">
+                                <br/>
                                 <p>Po ślubie Małgorzata i Czesław nadal używali swoich ruchomych licówek. Stwierdzili, że jest to bardzo wygodne rozwiązanie, ponieważ mogli zdjąć licówki w każdej chwili, gdy pojawiła się taka potrzeba. Ponadto licówki nie powodowały dyskomfortu, dzięki czemu mogli je nosić przez cały dzień.</p>
                                 <p><b>Z czasem Małgorzata i Czesław zauważyli, że zaczęli czuć się bardziej pewni siebie, ich nowy uśmiech pomógł im wyglądać lepiej i czuć się bardziej atrakcyjnie. Zauważyli, że ludzie zaczęli zwracać na nich większą uwagę i otrzymywali więcej komplementów.</b></p>
                                 <p>Nasi bohaterowie byli tak zadowoleni z rezultatu, że polecili ruchome licówki swoim przyjaciołom i znajomym, aby mogli oni poprawić swój uśmiech. Są przekonani, że był to najlepszy wybór, jakiego mogli dokonać, aby osiągnąć idealny uśmiech bez poświęcania mnóstwa czasu i pieniędzy, które z pewnością trzeba by było przeznaczyć na leczenie stomatologiczne.</p>
                                 <p><b>Zastosowanie zdejmowanych licówek pomogło Małgorzacie i Czesławowi nie tylko uzyskać idealny uśmiech na ich głównym wydarzeniu w życiu, ale również okazało się świetnym sposobem na dodanie im pewności siebie i atrakcyjności, co będzie miało pozytywny wpływ na ich przyszłe i niewątpliwie szczęśliwe życie.</b></p>
+                                <img src="images/pics/Pic6.jpeg" alt="" class="webt-article-img">
+                                <br/>
                                 <p>Ruchome licówki to jeden z najszybszych, bezbolesnych i najtańszych sposobów na uzyskanie idealnego uśmiechu, co jest szczególnie ważne zarówno dla osób planujących ślub lub inne ważne wydarzenie, gdzie wygląd ma szczególne znaczenie, jak i dla osób z niektórymi problemami stomatologicznymi.</p>
+                                <img src="images/pics/Pic5.jpeg" alt="" class="webt-article-img">
+                                <br/>
                                 <p>Ruchome licówki są tak łatwe i wygodne w użyciu, że będziesz naprawdę zszokowany tym jednym z najlepszych wynalazków ludzkości.</p>
+                                <img src="images/pics/Pic7.png" alt="" class="webt-article-img">
+                                <br/>
                                 <p><b>Ruchome licówki mogą być stosowane do korygowania różnych wad dentystycznych, takich jak nierówne zęby, zęby o nieregularnym kształcie, zęby z nierównym szkliwem i wiele innych problemów.</b></p>
+                                <div class="blur1 webt-article-img">
+                                    <img src="images/pics/Collage.jpg" style=" width:100%; max-width: 600px;display:block;margin:0 auto" class="blur">
+                                </div>
+                                <br/>
                                 <p><b>Ogólnie rzecz biorąc, stosowanie licówek ruchomych jest świetną alternatywą dla drogiego i czasochłonnego leczenia stomatologicznego, pozwalającą na uzyskanie idealnego uśmiechu szybko, bezboleśnie i przy minimalnych nakładach finansowych.</b></p>
                                 
                                 <h3 style="text-align:center;display: block; margin: 0.5em 0px; line-height: 1.2; font-weight: bold; text-transform: uppercase;font-size: 18px;">
@@ -538,7 +632,7 @@ a:visited,
     
                         <style>
                             .vk-container {
-                                font-family: sans-serif;
+                                font-family: sans-serif!important;
                                 font-size: 15px;
                                 color: #000;
                                 text-decoration: none
@@ -549,7 +643,9 @@ a:visited,
                                 padding: 4px 4px 4px 6px;
                                 margin-bottom: 10px
                             }
-    
+                            .comment-count {
+                                font-family: sans-serif!important;
+                            }
                             .vk-logo {
                                 background: transparent none no-repeat scroll 0 0;
                                 width: 16px;
@@ -627,11 +723,19 @@ a:visited,
                                 font-size: 13px!important;
                                 margin-bottom: 0!important;
                                 padding: 0 10px!important;
+                                font-family: sans-serif!important;
                             }
 
                             .comm_text .text {
                                 font-size: 15px!important;
                                 padding: 0 10px!important;
+                                font-family: sans-serif!important;
+                                margin-bottom: 24px!important;
+                            }
+
+                            .comm_text img {
+                                margin-bottom: 10px;
+                                margin-left: 10px;
                             }
 
                             .comm_text .time {
@@ -657,6 +761,7 @@ a:visited,
                                 margin: 0!important;
                                 margin-bottom: 16px!important;
                                 padding: 0 10px!important;
+                                font-family: sans-serif!important;
                             }
                             .emodji {
                                 cursor: pointer;
@@ -677,11 +782,28 @@ a:visited,
                             .emodji img {
                                 margin: 0;
                             }
+                            .knopka,
+                            .knopka:hover,
+                            .knopka:focus {
+                                padding: 20px;
+                                background-color: green;
+                                font-size: 30px;
+                                color: #fff;
+                                border-radius: 50px;
+                                width: 100%;
+                                text-align: center;
+                                border: none;
+                                display: block;
+                                max-width: 400px;
+                                margin: 0 auto;
+                                font-family: sans-serif!important;
+                                text-decoration: none;
+                            }
                         </style>
                         <div class="vk-container" style="float: none">
                             <div class="vk-header">
                                 <div class="vk-logo"></div>
-                                <div class="vk-header-text"><span class="comment-count">Uwagi</span></div>
+                                <div class="vk-header-text"><span class="comment-count">194 komentarze na dzień dzisiejszy</span></div>
                             </div>
                             <div class="vk-container">
                                 <div class="vk-container">
@@ -693,14 +815,14 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     4
                                                 </div>
-                                                <p class="user_name">Irene D.</p>
-                                                <p class="text"> ¡Perfecto! ¡Vaya transformación! Necesito carillas lo más pronto posible, también tengo problemas con dientes.</p>
+                                                <p class="user_name">Irena Jarosz</p>
+                                                <p class="text"> Doskonale! Co za przemiana!!! Potrzebuję licówek jak najszybciej, też mam problemy z zębami.</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora</p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu</p>
                                             </div>
                                         </div>
                                         <div class="comment">
@@ -710,43 +832,43 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     <img src="./images/heart.png" alt="">
                                                 </div>
-                                                <p class="user_name">Elena</p>
-                                                <p class="text">También me pedí las carillas Snap-On Smile, es perfecto! Y no hace falta pedir un crédito, hacía mucho que quería tener los dientes blancos.</p>
+                                                <p class="user_name">Helena Pietrzak</p>
+                                                <p class="text">Zamówiłam licówki Shiny Dentes, wszystko jest idealne! Nie trzeba też prosić o pożyczkę, od dawna chciałam mieć białe zęby.</p>
                                                 <img src="images/g1.jpg">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora</p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu</p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/3.1.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">María</p>
-                                                <p class="text">¡Sí! La sonrisa bonita cambia mucho a la gente. Me preocupa el estado de mis dientes y no tengo dinero para curarlos. Nadie piensa en la gente, piden mucho dinero a la gente estos dentistas. Menos mal que inventaron esto, son postizas, pero enseguida te transforman. ¡Qué belleza!</p>
+                                                <p class="user_name">Karolina Stankiewicz</p>
+                                                <p class="text">Aha - piękny uśmiech wywiera duży wpływ na ludzi. Martwi mnie stan moich zębów i nie mam pieniędzy na ich leczenie. Nikt nie myśli o ludziach, ci dentyści żądają tylko pieniędzy. Dzięki Bogu, że je wynaleźli, na pewno nie są ich autorstwa, ale od razu cię przekształcają. Takie piękno!</p>
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora</p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu</p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/4.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Celia</p>
-                                                <p class="text">Me pedí las carillas postizas. Me llamaron de la representación oficial en España para detallar la dirección de entrega. Mañana debo recibirlas.</p>
+                                                <p class="user_name">Monika Zakrzewska</p>
+                                                <p class="text">Zamówiłam licówki. Dostałam telefon od oficjalnego przedstawiciela w Polsce, aby potwierdzić adres dostawy. Jutro powinnam je otrzymać.</p>
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora</p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu</p>
                                             </div>
                                         </div>
                                         <div class="comment">
@@ -756,15 +878,15 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     3
                                                 </div>
-                                                <p class="user_name">Julia D.</p>
-                                                <p class="text">Yo también las pedí, todos piensan que tengo carillas de verdad.</p>
+                                                <p class="user_name">Teresa Skiba</p>
+                                                <p class="text">Ja też je zamówiłam, wszyscy myślą, że mam prawdziwe licówki.</p>
                                                 <img src="images/g2.jpg">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora</p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu</p>
                                             </div>
                                         </div>
                                         <div class="comment">
@@ -774,45 +896,45 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     <img src="./images/heart.png" alt="">
                                                 </div>
-                                                <p class="user_name">Ana Martínez</p>
-                                                <p class="text">¡Qué guay! ¡También las quiero!</p>
+                                                <p class="user_name">Magda Szewczyk</p>
+                                                <p class="text">Jak fajnie! Ja też chcę je mieć!</p>
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/7.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Sofía Nieto</p>
-                                                <p class="text">Es lo que necesito para salir. No las uso todos los días, solo en ocasiones.</p>
+                                                <p class="user_name">Danuta Jankowska</p>
+                                                <p class="text">To jest właśnie to, czego potrzebuję! Nie będę ich używać na co dzień, tylko na imprezy.</p>
                         
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/8.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Sandra Solía</p>
-                                                <p class="text">Las uso todos los días, ya no me imagino cómo es vivir sin carillas.</p>
+                                                <p class="user_name">Aleksandra Woźniak</p>
+                                                <p class="text">Używam ich codziennie, już nie potrafię sobie wyobrazić, jak to jest żyć bez licówek.</p>
                                                 <img src="images/g3.jpg">
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
@@ -822,101 +944,102 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     5
                                                 </div>
-                                                <p class="user_name">Juan</p>
-                                                <p class="text">Has ahorrado bien. Yo también quería hacerme los dientes perfectos, pero me pidieron más de mil EUR solo por un puente. No lo hice, sigo sin dientes, soy hombre y no pasa nada, pero una mujer sin dientes por supuesto es horroroso.</p>
+                                                <p class="user_name">Zbigniew Mróz</p>
+                                                <p class="text">Zaoszczędziła Pani dużo pieniędzy. Ja też chciałem naprawić zęby, ale za sam most żądali ponad tysiąc euro. Nie miałem ich, nie mam zębów, jestem mężczyzną i to nic wielkiego, a kobieta bez zębów to oczywiście horror.</p>
                         
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/10.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Nuria</p>
-                                                <p class="text">Anteriormente ya había pedido las carillas de otra empresa, recibí algo chino y de mala calidad. Y estas Snap-On Smile son guay, originales, se ajustan perfectamente, no tienen sabor de plástico. Me gustan, se ponen fácilmente.</p>
+                                                <p class="user_name">Iwona Wieczorek</p>
+                                                <p class="text">Poprzednio zamawiałam licówki z innej firmy, przyszło coś chińskiego i słabej jakości. A te Shiny Dentes są świetne, oryginalne, idealnie pasują i nie mają smaku plastiku. Lubię je!</p>
                         
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/11.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Natalia C.</p>
-                                                <p class="text">Ni siquiera he soñado de tener sonrisa tan bonita. ¡Muchas gracias por Su historia!</p>
+                                                <p class="user_name">Grażyna Maciejewska</p>
+                                                <p class="text">Nigdy nawet nie marzyłam, że będę miała tak piękny uśmiech. Bardzo dziękuję za waszą historię!</p>
                                                 <img src="images/g4.jpg">
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/12.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Amalia</p>
-                                                <p class="text">¡Es magia! Gracias al que inventó estas carillas.</p>
+                                                <p class="user_name">Amalia Cichoń</p>
+                                                <p class="text">Magia!!! Dziękuję temu, kto wymyślił te licówki.</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/13.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Anabela</p>
-                                                <p class="text">Por este dinero enseguida compré varias, por si se estropean, para tener unas de repuesto.</p>
+                                                <p class="user_name">Barbara Sokołowska</p>
+                                                <p class="text">Za te pieniądze kupiłam kilka naraz, na wypadek gdyby się połamały, więc mam zapas.</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/14.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Leonor Pérez</p>
-                                                <p class="text">Snap-On Smile — es una empresa estadounidense conocida. Son carillas de calidad, con frecuencia tienen promociones. Y otras empresas producen falsificaciones.</p>
+                                                <p class="user_name">Magda Olejniczak</p>
+                                                <p class="text">Shiny Dentes jest znaną amerykańską firmą. To są licówki dobrej jakości, często mają promocje. Inne firmy robią podróbki.</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/15.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Martina Rodríguez</p>
-                                                <p class="text">¡Qué bonita estás, Ana! ¡Os deseo divertirse en la boda!</p>
+                                                <p class="user_name">Katarzyna Jasińska</p>
+                                                <p class="text">Teraz są oferowane z rabatem, szczęście, kupiłam je wcześniej i w wyższej cenie, gdy nie było promocji....</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Me gusta</p>
-                                                <p class="down-menu-answer none">Contestar</p>
-                                                <p class="down-menu-translate none">Traducir</p>
-                                                <p class="time"> Hace más de una hora </p>
+                                                <p class="down-menu-like">Podoba mi się</p>
+                                                <p class="down-menu-answer none">Odpowiedz</p>
+                                                <p class="down-menu-translate none">Przekazanie</p>
+                                                <p class="time"> godzinę temu </p>
                                             </div>
                                         </div>
-                                        <a class="knopka" href="#form" style="display:block; max-width:400px; margin:0 auto">PEDIR <br>SNAP-ON SMILE</a>
+                                        <br>
+                                        <a class="knopka" href="#roulette" style="display:block; max-width:400px; margin:0 auto">ZAMÓWIENIE <br>SHINY DENTE</a>
                                         <br>&nbsp;<br>
                                     </div>
                                 </div>
@@ -1167,5 +1290,14 @@ a:visited,
 		});
 
 </script>
+    <script>
+        // toggle blur
+        document.querySelectorAll('.blur1').forEach(el => {
+            el.addEventListener('click', () => {
+                el.classList.toggle('blur1')
+                el.children[0].classList.toggle('blur')
+            })
+        })
+    </script>
 
 </body></html>
