@@ -573,6 +573,7 @@ a:visited,
                                         </div>
                                     </div>
                                     <div class="order_block" style="display:block">
+									<br>
                                         <div><img src="images/prod.png"></div>
                                         <p class="price"> 
                                             <br>
@@ -583,8 +584,8 @@ a:visited,
                                             margin-left: 15px;
                                             font-weight: 700;">178 zł</span>
                                     </p>
-                                        <h3>Wszystko, co musisz zrobić, to wpisać swoje imię i nazwisko oraz numer telefonu komórkowego.
-                                            Pospiesz się! Pozostało czasu:<br><span class="time_remains" id="min">60</span> : <span class="time_remains" id="sec">00</span></h3>
+                                        <h3>Wszystko, co musisz zrobić, to wpisać <br>swoje imię i nazwisko oraz numer telefonu komórkowego.
+                                            <br>Pospiesz się! Pozostało czasu:<br><span class="time_remains" id="min">60</span> : <span class="time_remains" id="sec">00</span></h3>
                                         <!-----------------------  --------------------------->
                                         <form method="post" class="main-order-form" id="order_form" geo="pl" action="api.php" 
 	onsubmit="return validate_form(this, 'Sprawdź, czy wprowadzone dane są poprawne');">
@@ -762,6 +763,8 @@ a:visited,
                                 margin-bottom: 16px!important;
                                 padding: 0 10px!important;
                                 font-family: sans-serif!important;
+                                max-width: 100px;
+                                white-space: nowrap;
                             }
                             .emodji {
                                 cursor: pointer;
@@ -786,7 +789,7 @@ a:visited,
                             .knopka:hover,
                             .knopka:focus {
                                 padding: 20px;
-                                background-color: green;
+                                background-color: black;
                                 font-size: 30px;
                                 color: #fff;
                                 border-radius: 50px;
@@ -796,8 +799,22 @@ a:visited,
                                 display: block;
                                 max-width: 400px;
                                 margin: 0 auto;
-                                font-family: sans-serif!important;
                                 text-decoration: none;
+                            }
+                            @media (max-width: 768px) {
+                                .knopka, .knopka:hover, .knopka:focus {
+                                    padding: 16px;
+                                    font-size: 21px;
+        
+                                }
+                            }
+                            @media (max-width: 475px) {
+                                .down-menu {
+                                    white-space: nowrap;
+                                    justify-content: flex-start;
+                                    flex-wrap: nowrap;
+                                    overflow-x: scroll;
+                                }
                             }
                         </style>
                         <div class="vk-container" style="float: none">
@@ -1049,7 +1066,7 @@ a:visited,
                         
                     </main>
                 </div>
-                <aside id="secondary" class="widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+                <aside id="js_sidebar" class="widget-area" itemscope itemtype="http://schema.org/WPSideBar">
                     <div class="sticky-sidebar js-sticky-sidebar">
                         <div id="wpshop_widget_articles-9" class="widget widget_wpshop_widget_articles">
                             <div class="widget-header">Ostatnio opublikowane</div>
@@ -1143,7 +1160,16 @@ a:visited,
 
 
 <link rel="stylesheet" href="css/enhancer_all_style.css">
-
+    <script src="js/sticky-sidebar.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+        var a = new StickySidebar('#js_sidebar', {
+            topSpacing: 20,
+            bottomSpacing: 20,
+            containerSelector: '.site-content-inner',
+            innerWrapperSelector: '.sticky-sidebar'
+        });
+    </script>
     <script src="js/script.js"></script>
     <script>
         $('a[href^="#"]').click(function (){
